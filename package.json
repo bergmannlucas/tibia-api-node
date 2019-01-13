@@ -7,8 +7,7 @@
     "start": "babel-node src/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
-    "teste": "babel-node src/modules/boss/boss.service.js"
+    "lint:fix": "eslint src --fix"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -23,7 +22,8 @@
     "http-status": "^1.3.1",
     "jsdom": "^13.1.0",
     "moment": "^2.23.0",
-    "mongoose": "^5.4.2"
+    "mongoose": "^5.4.2",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
