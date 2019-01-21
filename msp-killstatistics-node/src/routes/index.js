@@ -1,12 +1,10 @@
 import { Router } from 'express';
 import HTTPStatus from 'http-status';
-import WorldRoutes from './World/world.routes';
 
 const load = () => {
   const routes = new Router();
 
   /* Declare here all routes */
-  routes.use('/worlds', WorldRoutes);
   routes.get('/health-check', (req, res) => res.json({ healthcheck: 'success' }));
 
   routes.all('*', (req, res) => {

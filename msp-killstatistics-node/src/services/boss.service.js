@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Promise from 'bluebird';
-import { getDomFromURL, getTextContent, getTableData } from '../../lib/dom';
-import BossList from './bossList';
+import { getDomFromURL, getTextContent, getTableData } from '../lib/dom';
+import BossList from '../bossList';
 
 function BossService() {
 

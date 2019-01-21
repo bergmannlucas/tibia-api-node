@@ -1,7 +1,7 @@
 import { isEmpty } from 'ramda';
-import URL from '../../config/web';
-import { getDomFromURL, getTableContent } from '../../lib/dom';
-import { ValidationError } from '../../lib/errors/types';
+import URL from '../config/web';
+import { getDomFromURL, getTableContent } from '../lib/dom';
+import { ValidationError } from '../lib/errors/types';
 
 function WorldsService() {
 

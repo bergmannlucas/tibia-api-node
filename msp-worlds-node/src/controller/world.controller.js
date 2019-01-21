@@ -1,5 +1,5 @@
 import HTTPStatus from 'http-status';
-import WorldService from './world.service';
+import WorldService from '../services/world.service';
 import {
   compose,
   sum,
