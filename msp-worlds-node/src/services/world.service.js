@@ -1,5 +1,5 @@
 import { isEmpty } from 'ramda';
-import URL from '../config/web';
+import URL from './services.list';
 import { getDomFromURL, getTableContent } from '../lib/dom';
 import { ValidationError } from '../lib/errors/types';
 
