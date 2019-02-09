@@ -1,10 +1,33 @@
 {
+  "name": "msp-worlds-node",
+  "version": "1.0.0",
+  "description": "Worlds microservice",
+  "main": "src/index.js",
   "scripts": {
+    "clear": "rimraf bin",
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir bin src",
+    "build:watch": "npm run build -- -watch",
     "start": "babel-node src/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint": "./node_modules/.bin/eslint src/**/*.js src/*.js",
+    "lint:fix": "./node_modules/.bin/eslint src/**/*.js src/*.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bergmannlucas/tibia-api-node.git"
+  },
+  "keywords": [
+    "tibia",
+    "api",
+    "node"
+  ],
+  "author": "Lucas Bergmann <lucaasberg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bergmannlucas/tibia-api-node/issues"
+  },
+  "homepage": "https://github.com/bergmannlucas/tibia-api-node#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "bluebird": "^3.5.3",
@@ -26,6 +49,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "rimraf": "^2.6.3"
   }
 }
