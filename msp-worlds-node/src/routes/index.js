@@ -26,4 +26,4 @@ const load = () => {
   return routes;
 };
 
-module.exports = { load };
+export default load;

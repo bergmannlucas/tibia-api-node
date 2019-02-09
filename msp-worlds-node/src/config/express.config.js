@@ -3,7 +3,7 @@ import cors from 'cors';
 import express from 'express';
 import http from 'http';
 
-import { load } from '../routes';
+import load from '../routes';
 
 require('dotenv').config();
 

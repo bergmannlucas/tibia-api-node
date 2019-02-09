@@ -21,4 +21,4 @@ class InternalServerError extends Error {
 module.exports = {
   ValidationError,
   InternalServerError,
-}
+};
