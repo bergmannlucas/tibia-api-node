@@ -1,0 +1,9 @@
+version: '3'
+services:
+  worlds:
+    build: './msp-worlds-node'
+    environment:
+      PORT: 3001
+      NODE_ENV: development
+    ports: 
+      - "3001:3001"
